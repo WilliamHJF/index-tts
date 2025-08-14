@@ -1,15 +1,6 @@
+<h2><center>Datawhale AI夏令营：全球AI攻防挑战赛（AIGC技术-语音方向）</h2>
 
-<div align="center">
-<img src='assets/index_icon.png' width="250"/>
-</div>
-
-
-<h2><center>IndexTTS: An Industrial-Level Controllable and Efficient Zero-Shot Text-To-Speech System</h2>
-
-<p align="center">
-<a href='https://arxiv.org/abs/2502.05512'><img src='https://img.shields.io/badge/ArXiv-2502.05512-red'></a>
-
-## 👉🏻 IndexTTS 👈🏻
+## 模型选择：👉🏻 IndexTTS 👈🏻
 
 [[HuggingFace Demo]](https://huggingface.co/spaces/IndexTeam/IndexTTS)   [[ModelScope Demo]](https://modelscope.cn/studios/IndexTeam/IndexTTS-Demo) \
 [[Paper]](https://arxiv.org/abs/2502.05512)  [[Demos]](https://index-tts.github.io)  
@@ -17,12 +8,6 @@
 **IndexTTS** is a GPT-style text-to-speech (TTS) model mainly based on XTTS and Tortoise. It is capable of correcting the pronunciation of Chinese characters using pinyin and controlling pauses at any position through punctuation marks. We enhanced multiple modules of the system, including the improvement of speaker condition feature representation, and the integration of BigVGAN2 to optimize audio quality. Trained on tens of thousands of hours of data, our system achieves state-of-the-art performance, outperforming current popular TTS systems such as XTTS, CosyVoice2, Fish-Speech, and F5-TTS.
 <span style="font-size:16px;">  
 Experience **IndexTTS**: Please contact <u>xuanwu@bilibili.com</u> for more detailed information. </span>
-### Contact
-QQ群（二群）：1048202584 \
-Discord：https://discord.gg/uT32E7KDmy  \
-简历：indexspeech@bilibili.com  \
-欢迎大家来交流讨论！
-## 📣 Updates
 
 - `2025/05/14` 🔥🔥 We release the **IndexTTS-1.5**, Significantly improve the model's stability and its performance in the English language.
 - `2025/03/25` 🔥 We release IndexTTS-1.0 model parameters and inference code.
@@ -224,6 +209,11 @@ tts = IndexTTS(model_dir="checkpoints",cfg_path="checkpoints/config.yaml")
 voice="reference_voice.wav"
 text="大家好，我现在正在bilibili 体验 ai 科技，说实话，来之前我绝对想不到！AI技术已经发展到这样匪夷所思的地步了！比如说，现在正在说话的其实是B站为我现场复刻的数字分身，简直就是平行宇宙的另一个我了。如果大家也想体验更多深入的AIGC功能，可以访问 bilibili studio，相信我，你们也会吃惊的。"
 tts.infer(voice, text, output_path)
+```
+
+6. 运行result.py（输出200条目标音频)
+```bash
+python result.py
 ```
 
 ## Acknowledge
